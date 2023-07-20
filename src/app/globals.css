@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.global_font{
+    font-family: 'Poppins', sans-serif;
+}
+.size1{
+    font-size: 1rem;
+}
+.size2{
+    font-size: 0.8rem;
+}
