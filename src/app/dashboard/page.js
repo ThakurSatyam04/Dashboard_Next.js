@@ -1,10 +1,10 @@
 "use client"
-import Navbar from '../component/navbar'
-import DropDown from '../component/dropdown'
-import Form1 from '../component/form1'
-import Form2 from '../component/form2'
-import Form3 from '../component/form3'
-import Form4 from '../component/form4'
+import Navbar from '../component/Navbar'
+import DropDown from '../component/Dropdown'
+import Form1 from '../component/Form1'
+import Form2 from '../component/Form2'
+import Form3 from '../component/Form3'
+import Form4 from '../component/Form4'
 import Link from 'next/link'
 import { useState, useEffect } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Add the Font Awesome icons to the library
 library.add(faSearch , faShoppingBag,faShop,faUsers,faList,faGear,faTrash ) ;
-const page = () => {
+const Dashboard = () => {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
 
   useEffect(() => {
@@ -145,4 +145,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Dashboard

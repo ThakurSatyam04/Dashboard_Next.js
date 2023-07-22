@@ -1,4 +1,4 @@
-const page = () => {
+const Register = () => {
   return (
     <div className="w-full h-screen flex items-center justify-center">
       <p className="font-bold">This is the Registeration page</p>
@@ -6,4 +6,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Register

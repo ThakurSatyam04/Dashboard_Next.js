@@ -4,9 +4,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-const page = () => {
+const Login = () => {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -15,15 +15,15 @@ const page = () => {
   const handleLogin=(e)=>{
     e.preventDefault();
     router.push('/dashboard');
-    toast.success('Login successful!', {
-      position: 'top-right',
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
+    // toast.success('Login successful!', {
+    //   position: 'top-right',
+    //   autoClose: 3000,
+    //   hideProgressBar: false,
+    //   closeOnClick: true,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    //   progress: undefined,
+    // });
   }
 
   return (
@@ -78,7 +78,11 @@ const page = () => {
                 <span>or</span>
                 <div className="w-full h-0.5 bg-gray-400"></div>
               </div>
-              {/* Your register button here */}
+              <Link className="w-full" href="/register"> 
+                <button className="w-full p-1 mt-2 rounded-md border border-neutral-600 hover:bg-gray-300">
+                  Register now
+                </button>                      
+              </Link>
             </div>
           </form>
         </div>
@@ -88,4 +92,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Login

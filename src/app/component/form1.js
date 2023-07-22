@@ -1,4 +1,4 @@
-import TableLayout from '../component/TableLayout'
+import TableLayout from './TableLayout'
 import { library } from '@fortawesome/fontawesome-svg-core';
 {/* <FontAwesomeIcon icon="fa-light fa-magnifying-glass" style={{color: "#050505",}} /> */}
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Add the Font Awesome icons to the library
 library.add(faTrash ) ;
-const form1 = () => {
+const Form1 = () => {
   return (
     <>
       <div className="mt-10 bg-white overflow-x-auto">
@@ -46,4 +46,4 @@ const form1 = () => {
   )
 }
 
-export default form1
+export default Form1

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { imageConfigDefault } from 'next/dist/shared/lib/image-config';
 
-const dropdown = (props) => {
+const Dropdown = (props) => {
   const options = [
     { label: props.value1, value: props.value1 },
     { label: props.value2, value: props.value2 },
@@ -57,5 +57,5 @@ const dropdown = (props) => {
   );
 };
 
-export default dropdown;
+export default Dropdown;
 

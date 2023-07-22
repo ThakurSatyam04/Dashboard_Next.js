@@ -7,7 +7,7 @@ import { faSearch , faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HamburgerMenu from 'react-hamburger-menu';
 
-const navbar = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggleMenu = () => {
@@ -60,4 +60,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar

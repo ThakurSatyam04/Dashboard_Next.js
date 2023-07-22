@@ -1,4 +1,4 @@
-const form3 = () => {
+const Form3 = () => {
   return (
     <>
      <div className="mt-10 bg-white w-full md:w-[70%]">
@@ -58,4 +58,4 @@ const form3 = () => {
   )
 }
 
-export default form3
+export default Form3
